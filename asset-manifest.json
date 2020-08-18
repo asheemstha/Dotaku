@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Dotaku/static/css/main.42d76434.chunk.css",
+    "main.js": "/Dotaku/static/js/main.00239891.chunk.js",
+    "main.js.map": "/Dotaku/static/js/main.00239891.chunk.js.map",
+    "runtime-main.js": "/Dotaku/static/js/runtime-main.0dad3907.js",
+    "runtime-main.js.map": "/Dotaku/static/js/runtime-main.0dad3907.js.map",
+    "static/js/2.53e60213.chunk.js": "/Dotaku/static/js/2.53e60213.chunk.js",
+    "static/js/2.53e60213.chunk.js.map": "/Dotaku/static/js/2.53e60213.chunk.js.map",
+    "index.html": "/Dotaku/index.html",
+    "precache-manifest.f4dc31739b24de22af034411a46b5b0d.js": "/Dotaku/precache-manifest.f4dc31739b24de22af034411a46b5b0d.js",
+    "service-worker.js": "/Dotaku/service-worker.js",
+    "static/css/main.42d76434.chunk.css.map": "/Dotaku/static/css/main.42d76434.chunk.css.map",
+    "static/js/2.53e60213.chunk.js.LICENSE.txt": "/Dotaku/static/js/2.53e60213.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/Dotaku/static/media/Inter.0930073e.ttf",
+    "static/media/HeroBG1.jpg": "/Dotaku/static/media/HeroBG1.1a657ce3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0dad3907.js",
+    "static/js/2.53e60213.chunk.js",
+    "static/css/main.42d76434.chunk.css",
+    "static/js/main.00239891.chunk.js"
+  ]
+}
