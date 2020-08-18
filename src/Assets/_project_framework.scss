@@ -1,0 +1,141 @@
+:root {
+  font-size: 14px;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: $gray-100;
+  position: relative;
+}
+body.when-nav-is-active {
+  overflow-y: hidden;
+}
+///Global Resetting
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  color: $dark;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+}
+.fill {
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.ty214 {
+  transform: translateY(0.214em);
+  font-family: "Grifter Bold", "Inter", sans-serif;
+}
+
+///Component Style
+.dark-bg {
+  background-color: $dark;
+  color: $light;
+  * {
+    color: $light;
+  }
+}
+.light-bg {
+  background-color: $light;
+  color: $dark;
+  * {
+    color: $dark;
+  }
+}
+
+///Button
+button {
+  border: none;
+  background: transparent;
+  padding: 0.75em 1rem;
+  display: flex;
+  cursor: pointer;
+  &.dark-btn {
+    background-color: $dark;
+    color: $light;
+    transition: background-color 0.25s ease-in-out;
+    * {
+      color: $light;
+    }
+    &:hover {
+      background-color: $gray-600;
+    }
+  }
+  &.light-btn {
+    background-color: $light;
+    color: $dark;
+    transition: background-color 0.25s ease-in-out;
+    * {
+      color: $dark;
+    }
+    &:hover {
+      background-color: $gray-200;
+    }
+  }
+}
+
+///Flex-Box
+.flex {
+  display: flex;
+  &.f-pc {
+    align-items: center;
+    justify-content: center;
+  }
+  &.f-c-sb {
+    align-items: center;
+    justify-content: space-between;
+  }
+  &.f-ai-c {
+    align-items: center;
+  }
+  &.f-jc-fs {
+    justify-content: flex-start;
+  }
+  &.f-jc-fe {
+    justify-content: flex-end;
+  }
+  &.f-jc-sb {
+    justify-content: space-between;
+  }
+  &.column {
+    flex-direction: column;
+  }
+  &.row {
+    flex-direction: row;
+  }
+}
+
+///Responsive
+.mob-s-desk-h {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .desk-s-mob-h {
+    display: none;
+  }
+  .mob-s-desk-h {
+    display: flex;
+  }
+  button {
+    &.dark-btn {
+      &:hover {
+        background-color: $dark;
+      }
+    }
+    &.light-btn {
+      &:hover {
+        background-color: $light;
+      }
+    }
+  }
+}

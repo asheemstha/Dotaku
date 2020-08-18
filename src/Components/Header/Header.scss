@@ -1,0 +1,109 @@
+header.main-header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999;
+  .header-content {
+    height: 4rem;
+    width: 85%;
+    margin: 0 auto;
+    .h-c-left {
+      .header-burger {
+        height: 4rem;
+        width: 4rem;
+        .burger {
+          .line1,
+          .line2 {
+            border: 1px solid $light;
+            height: 3px;
+            margin: 5px;
+          }
+          .line1 {
+            width: 25px;
+          }
+          .line2 {
+            width: 15px;
+          }
+        }
+      }
+      .brand-link {
+        &:hover {
+          .brand-logo {
+            .brand-logo-text {
+              color: $gray-600;
+            }
+          }
+        }
+        .brand-logo {
+          img.brand-logo-img {
+            height: 4rem;
+            width: 4rem;
+          }
+          .brand-logo-text {
+            font-size: 1.25rem;
+            margin-left: 1rem;
+            transition: color 0.25s ease-in-out;
+          }
+        }
+      }
+    }
+    .h-c-right {
+      .header-search-btn {
+        height: 4rem;
+        width: 4rem;
+        .header-search-icon {
+          font-size: 1.25rem;
+        }
+      }
+      .header-nav {
+        .header-nav-link {
+          margin: 0 1rem;
+          &:last-child {
+            margin: 0 0 0 1rem;
+          }
+          &:hover {
+            .header-nav-link-text {
+              color: $gray-600;
+            }
+          }
+          .header-nav-link-text {
+            font-size: 0.85rem;
+            transition: color 0.25s ease-in-out;
+          }
+          button.signin-btn {
+            width: 7.5rem;
+            .signin-text {
+              font-size: 0.85rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  header.main-header {
+    .header-content {
+      width: 100%;
+      .h-c-left {
+        .brand-link {
+          margin-left: 1.5rem;
+          .brand-logo {
+            .brand-logo-text {
+              margin: 0;
+            }
+          }
+        }
+      }
+      .h-c-right {
+        .header-search-btn {
+          .header-search-icon {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

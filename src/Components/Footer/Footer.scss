@@ -1,0 +1,51 @@
+footer.main-footer {
+  width: 100vw;
+  border-top: 0.075rem solid $gray-300;
+  .footer-content {
+    height: 4rem;
+    width: 85%;
+    margin: 0 auto;
+    .social-links {
+      .social-link {
+        font-family: "Grifter Bold", "Inter", sans-serif;
+        font-size: 0.85rem;
+        color: $gray-500;
+        transition: color 0.25s ease-in-out;
+        margin: 0 1rem;
+
+        &:first-child {
+          margin: 0 1rem 0 0;
+        }
+        &:last-child {
+          margin: 0 0 0 1rem;
+        }
+        &:hover {
+          color: $dark;
+        }
+      }
+    }
+    .copyright-claim {
+      .copyright-claim-text {
+        font-size: 0.85rem;
+        font-family: "Grifter Bold", "Inter", sans-serif;
+        color: $gray-500;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  footer.main-footer {
+    .footer-content {
+      width: 100%;
+      height: max-content;
+      flex-direction: column;
+      .social-links {
+        height: 4rem;
+      }
+      .copyright-claim {
+        height: 4rem;
+        border-top: 0.075rem solid $gray-300;
+      }
+    }
+  }
+}

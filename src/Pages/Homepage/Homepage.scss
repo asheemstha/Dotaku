@@ -1,0 +1,9 @@
+.homepage {
+  .homepage-hero {
+    height: 45vh;
+    overflow: hidden;
+    img.hero-img {
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+///Grifter
+@font-face {
+  font-family: "Grifter Bold";
+  src: url("./Assets/Fonts/GrifterBold/GRIFTER™+Bold.otf");
+}
+///Inter
+@font-face {
+  font-family: "Inter";
+  src: url("./Assets/Fonts/Inter/Inter.ttf");
+}
+@import "./Assets/variable";
+@import "./Assets/project_framework";
+@import "./Components/components";
+@import "./Pages/Pages.scss";
+
+.App {
+  .nav-escape {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    backdrop-filter: blur(10px);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  }
+  .nav-escape.active-nav-escape {
+    visibility: visible;
+    opacity: 1;
+  }
+}
