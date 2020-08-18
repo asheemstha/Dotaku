@@ -20,7 +20,7 @@ export default class App extends Component {
   };
   render() {
     return (
-      <Router>
+      <Router basename="/Dotaku">
         <div className="App">
           <div className="nav-escape" onClick={this.navToggle}></div>
           <Navbar />
